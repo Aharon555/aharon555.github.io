@@ -16,7 +16,7 @@
   --rule:#242A33;
   --kept:#8FB08A;   /* semantic only, used once, in the funnel */
   --cut:#9A6B6B;
-  --max:64rem;
+  --max:78rem;
 }
 
 *{box-sizing:border-box}
@@ -144,6 +144,33 @@ footer .who{color:var(--paper);font-weight:600}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
+
+/* ---- margin notes -----------------------------------------------------
+   A research document has margin notes; a brochure does not. Each one
+   carries a fact or a source, never a slogan. They hang off a hairline
+   rule so the column edge reads as deliberate rather than as dead space.
+   Below 62rem they move above the content instead of being hidden -
+   they hold information, so they must not disappear on a phone.        */
+.wrap{max-width:var(--max)}
+section{display:grid;grid-template-columns:13rem 1fr;gap:3rem;align-items:start}
+section.hero{display:block}
+.note{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;line-height:1.75;color:var(--muted);
+  border-left:1px solid var(--rule);padding-left:1rem;
+  margin-top:.35rem;
+}
+.note b{display:block;color:var(--muted-2);font-weight:400;letter-spacing:.1em;
+  text-transform:uppercase;font-size:.62rem;margin-bottom:.5rem}
+.body{min-width:0}
+footer .wrap{max-width:var(--max)}
+
+@media (max-width:62rem){
+  section{grid-template-columns:1fr;gap:1.5rem}
+  .note{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:.9rem;
+    margin-top:0;order:-1}
+}
+
 /* ---- motion ----------------------------------------------------------
    Two orchestrated moments only. The hero drop plays once on load; the
    funnel draws when it scrolls into view. Everything else is a small,
@@ -188,7 +215,7 @@ footer .who{color:var(--paper);font-weight:600}
     <p class="sub">I research outbound accounts — which ones, why now, who to contact, and what to say. <strong>Your team sends.</strong></p>
   </section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>Source</b>One delivered build, August 2026. Figures are unrounded and come from the working file, not an estimate.</aside><div class="body">
     <p class="eyebrow">One build, start to finish</p>
     <h2>Most of the work is throwing things away</h2>
     <div class="funnel">
@@ -210,16 +237,16 @@ footer .who{color:var(--paper);font-weight:600}
       </div>
     </div>
     <p class="scalenote">Bars are drawn to scale. That is why the last one is almost invisible.</p>
-  </section>
+  </div></section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>The cut</b>Seven of the seventeen that reached the evidence stage were removed. The cut list ships with the batch.</aside><div class="body">
     <p class="pullnum" data-num="41" data-suffix="%">41%</p>
     <h2>of what cleared the filter died once I opened the raw record</h2>
     <p style="color:var(--muted-2);margin-top:1.25rem">Seven of the seventeen accounts that reached the evidence stage were cut. One looked perfect on the filter — right size, right stack, hiring salespeople — until I pulled the actual job postings. Fourteen open roles, exactly one revenue seat in the US, and the only AE opening was in Australia.</p>
     <p style="color:var(--muted-2)">You get the cut list too, with the reason for each one. That part is usually more useful than the picks.</p>
-  </section>
+  </div></section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>Rule</b>If a field cannot be filled from a source, it is marked as a gap. It is never filled by inference.</aside><div class="body">
     <p class="eyebrow">What arrives with every account</p>
     <h2>Evidence, not adjectives</h2>
     <div class="cols">
@@ -240,9 +267,9 @@ footer .who{color:var(--paper);font-weight:600}
         <p>Grounded in that evidence and nothing else. If the evidence doesn't support a claim, the message doesn't make it.</p>
       </div>
     </div>
-  </section>
+  </div></section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>Why so short</b>Everything on this list is testable. Anything I could not be caught breaking is not worth writing down.</aside><div class="body">
     <p class="eyebrow">What I don't do</p>
     <h2>The list is shorter than the pitch</h2>
     <ul class="nots">
@@ -251,22 +278,22 @@ footer .who{color:var(--paper);font-weight:600}
       <li>I never touch your LinkedIn or your domains. Your team sends.</li>
       <li>No padding a list to reach a round number. If seven hold up, you get seven and the reason there aren't ten.</li>
     </ul>
-  </section>
+  </div></section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>The arithmetic</b>At 150 accounts a month the price fails for me. At ten to twenty it works for both of us.</aside><div class="body">
     <p class="eyebrow">Who this fits</p>
     <h2>Fractional sales leaders, consultants, small outbound teams</h2>
     <p style="color:var(--muted-2);margin-top:1.25rem">People sending ten to twenty accounts a month who can't afford half of them to be wrong. If you have an SDR team burning through a hundred and fifty a month, the arithmetic doesn't work for either of us and I'd rather say so now.</p>
-  </section>
+  </div></section>
 
-  <section class="reveal">
+  <section class="reveal"><aside class="note"><b>What it costs you</b>An ICP in a sentence. No call, no contract, no follow-up sequence if you go quiet.</aside><div class="body">
     <div class="offer">
       <h2>I'd rather show you than pitch you</h2>
       <p>Tell me your ICP. I'll research ten accounts against it and send them over — contacts included, with the evidence behind each one. And the ones I cut, with the reason.</p>
       <p style="margin-top:1rem">No charge, nothing owed. Judge it on the output.</p>
       <a class="cta" href="mailto:r.o@getgetacme.com?subject=ICP">Send me your ICP</a>
     </div>
-  </section>
+  </div></section>
 
 </div>
 
