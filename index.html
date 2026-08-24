@@ -143,6 +143,38 @@ footer a{color:var(--muted-2)}
 footer .who{color:var(--paper);font-weight:600}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---- motion ----------------------------------------------------------
+   Two orchestrated moments only. The hero drop plays once on load; the
+   funnel draws when it scrolls into view. Everything else is a small,
+   uniform reveal so the page does not read as a template of effects.
+   All of it is off under prefers-reduced-motion.                        */
+.anim .hero .drop .dim,
+.anim .hero .drop .lit,
+.anim .hero .sub{opacity:0;transform:translateY(.55em)}
+.anim .hero.play .drop .dim{animation:rise .62s cubic-bezier(.2,.7,.2,1) .1s forwards}
+.anim .hero.play .drop .lit{animation:rise .42s cubic-bezier(.16,.9,.24,1) .52s forwards}
+.anim .hero.play .sub{animation:rise .6s cubic-bezier(.2,.7,.2,1) .95s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+.anim .reveal{opacity:0;transform:translateY(1.1rem);
+  transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1)}
+.anim .reveal.in{opacity:1;transform:none}
+
+/* The bar is the argument: it draws to a width that collapses each step. */
+.anim .step .bar{width:0!important;transition:width .85s cubic-bezier(.16,.85,.3,1)}
+.anim .funnel.in .step .bar{width:var(--w)!important}
+.anim .funnel.in .step:nth-child(1) .bar{transition-delay:.05s}
+.anim .funnel.in .step:nth-child(2) .bar{transition-delay:.28s}
+.anim .funnel.in .step:nth-child(3) .bar{transition-delay:.51s}
+.anim .funnel.in .step:nth-child(4) .bar{transition-delay:.74s}
+
+@media (prefers-reduced-motion:reduce){
+  .anim .hero .drop .dim,.anim .hero .drop .lit,.anim .hero .sub,
+  .anim .reveal{opacity:1!important;transform:none!important;animation:none!important}
+  .anim .step .bar{width:var(--w)!important;transition:none!important}
+}
+
 </style>
 
 <main>
@@ -156,38 +188,38 @@ footer .who{color:var(--paper);font-weight:600}
     <p class="sub">I research outbound accounts — which ones, why now, who to contact, and what to say. <strong>Your team sends.</strong></p>
   </section>
 
-  <section>
+  <section class="reveal">
     <p class="eyebrow">One build, start to finish</p>
     <h2>Most of the work is throwing things away</h2>
     <div class="funnel">
       <div class="step">
-        <span class="n">793</span>
-        <div><div class="bar" style="width:100%"></div><div class="label">matched the filter</div></div>
+        <span class="n" data-num="793">793</span>
+        <div><div class="bar" style="--w:100%;width:100%"></div><div class="label">matched the filter</div></div>
       </div>
       <div class="step">
-        <span class="n">124</span>
-        <div><div class="bar" style="width:15.6%"></div><div class="label">I actually opened and read</div></div>
+        <span class="n" data-num="124">124</span>
+        <div><div class="bar" style="--w:15.6%;width:15.6%"></div><div class="label">I actually opened and read</div></div>
       </div>
       <div class="step">
-        <span class="n">17</span>
-        <div><div class="bar" style="width:2.1%"></div><div class="label">survived the evidence check</div></div>
+        <span class="n" data-num="17">17</span>
+        <div><div class="bar" style="--w:2.1%;width:2.1%"></div><div class="label">survived the evidence check</div></div>
       </div>
       <div class="step final">
-        <span class="n">10</span>
-        <div><div class="bar" style="width:1.26%"></div><div class="label">delivered</div></div>
+        <span class="n" data-num="10">10</span>
+        <div><div class="bar" style="--w:1.26%;width:1.26%"></div><div class="label">delivered</div></div>
       </div>
     </div>
     <p class="scalenote">Bars are drawn to scale. That is why the last one is almost invisible.</p>
   </section>
 
-  <section>
-    <p class="pullnum">41%</p>
+  <section class="reveal">
+    <p class="pullnum" data-num="41" data-suffix="%">41%</p>
     <h2>of what cleared the filter died once I opened the raw record</h2>
     <p style="color:var(--muted-2);margin-top:1.25rem">Seven of the seventeen accounts that reached the evidence stage were cut. One looked perfect on the filter — right size, right stack, hiring salespeople — until I pulled the actual job postings. Fourteen open roles, exactly one revenue seat in the US, and the only AE opening was in Australia.</p>
     <p style="color:var(--muted-2)">You get the cut list too, with the reason for each one. That part is usually more useful than the picks.</p>
   </section>
 
-  <section>
+  <section class="reveal">
     <p class="eyebrow">What arrives with every account</p>
     <h2>Evidence, not adjectives</h2>
     <div class="cols">
@@ -210,7 +242,7 @@ footer .who{color:var(--paper);font-weight:600}
     </div>
   </section>
 
-  <section>
+  <section class="reveal">
     <p class="eyebrow">What I don't do</p>
     <h2>The list is shorter than the pitch</h2>
     <ul class="nots">
@@ -221,13 +253,13 @@ footer .who{color:var(--paper);font-weight:600}
     </ul>
   </section>
 
-  <section>
+  <section class="reveal">
     <p class="eyebrow">Who this fits</p>
     <h2>Fractional sales leaders, consultants, small outbound teams</h2>
     <p style="color:var(--muted-2);margin-top:1.25rem">People sending ten to twenty accounts a month who can't afford half of them to be wrong. If you have an SDR team burning through a hundred and fifty a month, the arithmetic doesn't work for either of us and I'd rather say so now.</p>
   </section>
 
-  <section>
+  <section class="reveal">
     <div class="offer">
       <h2>I'd rather show you than pitch you</h2>
       <p>Tell me your ICP. I'll research ten accounts against it and send them over — contacts included, with the evidence behind each one. And the ones I cut, with the reason.</p>
@@ -246,3 +278,46 @@ footer .who{color:var(--paper);font-weight:600}
   </div>
 </footer>
 </main>
+
+<script>
+// Progressive enhancement: the .anim class is only added by JS, so with
+// scripting off the page renders fully visible instead of blank.
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('anim');
+
+  var hero = document.querySelector('.hero');
+  requestAnimationFrame(function(){ hero.classList.add('play'); });
+
+  function countUp(el){
+    var target = parseInt(el.dataset.num, 10), suffix = el.dataset.suffix || '';
+    if (reduce){ el.textContent = target + suffix; return; }
+    var dur = 900, t0 = null;
+    function step(t){
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      // ease-out so the number settles rather than stopping dead
+      var v = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      el.textContent = v + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    el.textContent = '0' + suffix;
+    requestAnimationFrame(step);
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-num]').forEach(countUp);
+      if (e.target.hasAttribute('data-num')) countUp(e.target);
+      io.unobserve(e.target);
+    });
+  }, {threshold: 0.25, rootMargin: '0px 0px -8% 0px'});
+
+  document.querySelectorAll('.reveal, .funnel, [data-num]').forEach(function(el){
+    io.observe(el);
+  });
+})();
+</script>
+
