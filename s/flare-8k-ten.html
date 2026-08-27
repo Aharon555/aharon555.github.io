@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ten Post-Disclosure Accounts — Prepared for John Williamson">
+<meta property="og:description" content="Ten public companies that told the SEC they had a material cybersecurity incident, with the person who owns the response.">
+<meta property="og:site_name" content="GetGetAcme">
+<meta name="twitter:card" content="summary">
+<title>Ten Post-Disclosure Accounts — Prepared for John Williamson</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --bg:#0f1115; --panel:#161920; --panel-2:#1c2029; --line:#272c37;
+    --ink:#e8eaef; --ink-2:#a2a9b8; --ink-3:#6d7585; --amber:#e8b44a;
+    --flag:#e0863f;
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:56px 22px 88px}
+
+  .eyebrow{
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink-3); margin:0 0 18px
+  }
+  h1{
+    font-size:clamp(30px,5.4vw,44px); line-height:1.15; letter-spacing:-.02em;
+    margin:0 0 18px; font-weight:600
+  }
+  .lede{font-size:clamp(17px,2.4vw,19px); color:var(--ink-2); margin:0; max-width:62ch}
+  .lede strong{color:var(--ink); font-weight:600}
+
+  .signal{
+    margin:38px 0 8px; padding:22px 24px; background:var(--panel);
+    border:1px solid var(--line); border-left:3px solid var(--amber); border-radius:8px;
+  }
+  .signal h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber); margin:0 0 10px; font-weight:600}
+  .signal p{margin:0 0 10px; color:var(--ink-2); font-size:15px}
+  .signal p:last-child{margin-bottom:0}
+
+  .count{
+    display:flex; gap:28px; flex-wrap:wrap; margin:34px 0 6px;
+    padding:20px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line)
+  }
+  .count div{flex:1 1 140px}
+  .count b{display:block; font-size:28px; color:var(--amber); font-weight:600; line-height:1.2; font-variant-numeric:tabular-nums}
+  .count span{font-size:13px; color:var(--ink-3)}
+
+  .card{
+    margin-top:16px; background:var(--panel); border:1px solid var(--line);
+    border-radius:10px; overflow:hidden
+  }
+  .card-top{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    padding:20px 24px 0
+  }
+  .co{font-size:21px; font-weight:600; letter-spacing:-.01em; margin:0}
+  .meta{font-size:13px; color:var(--ink-3); margin:0}
+  .reps{
+    margin-left:auto; text-align:right; white-space:nowrap;
+    font-variant-numeric:tabular-nums
+  }
+  .reps b{font-size:30px; color:var(--amber); font-weight:600; line-height:1}
+  .reps span{display:block; font-size:11px; color:var(--ink-3); letter-spacing:.07em; text-transform:uppercase; margin-top:2px}
+
+  .who{
+    margin:16px 24px 0; padding:14px 16px; background:var(--panel-2);
+    border-radius:7px; font-size:15px
+  }
+  .who .nm{font-weight:600}
+  .who .ti{color:var(--ink-2)}
+  .who .links{margin-top:7px; font-size:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  .who a{color:var(--amber); text-decoration:none; border-bottom:1px solid rgba(232,180,74,.32)}
+  .who a:hover{border-bottom-color:var(--amber)}
+  .dot{color:var(--ink-3)}
+
+  .body{padding:16px 24px 22px}
+  .body p{margin:0 0 12px; font-size:15px; color:var(--ink-2)}
+  .body p:last-child{margin-bottom:0}
+  .body .lbl{
+    display:block; font-size:11px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-3); margin-bottom:3px
+  }
+  .opener{
+    margin:16px 24px 22px; padding:15px 18px; background:#12151c;
+    border:1px dashed var(--line); border-radius:7px;
+    font-size:15px; color:var(--ink); line-height:1.65
+  }
+  .opener .lbl{
+    display:block; font-size:11px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-3); margin-bottom:7px
+  }
+  .flag{
+    margin:14px 24px 0; padding:11px 14px; border-radius:7px;
+    background:rgba(224,134,63,.09); border:1px solid rgba(224,134,63,.28);
+    font-size:13.5px; color:#f0b98a
+  }
+  .flag b{color:var(--flag)}
+
+  .corr{
+    margin:14px 24px 0; padding:11px 14px; border-radius:7px;
+    background:rgba(110,190,140,.09); border:1px solid rgba(110,190,140,.28);
+    font-size:13.5px; color:#9fd4b4
+  }
+  .corr b{color:#6fc294}
+  footer{margin-top:52px; padding-top:26px; border-top:1px solid var(--line)}
+  footer h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 14px; font-weight:600}
+  footer p{font-size:14.5px; color:var(--ink-2); margin:0 0 12px; max-width:70ch}
+  footer p:last-child{margin-bottom:0}
+  footer strong{color:var(--ink)}
+  .sig{margin-top:26px; font-size:14px; color:var(--ink-3)}
+  .sig a{color:var(--amber); text-decoration:none}
+
+  @media (max-width:560px){
+    .wrap{padding:38px 16px 64px}
+    .card-top{padding:18px 18px 0}
+    .who,.opener,.flag{margin-left:18px; margin-right:18px}
+    .body{padding:14px 18px 20px}
+    .reps{margin-left:0; text-align:left}
+    .reps b{font-size:26px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Prepared for John Williamson &middot; Flare &middot; 27 August 2026</p>
+  <h1>Ten companies that told the SEC they had a cybersecurity incident.</h1>
+  <p class="lede">Since 2023 a US public company has been legally required to report a material cybersecurity incident on Form 8-K under Item 1.05, within four business days of deciding it is material. <strong>These ten filed one this year.</strong> It is a disclosure the company had no choice about making, with a date on it, and it is not in any sales database.</p>
+
+  <div class="signal">
+    <h2>Why this and not a breach feed</h2>
+    <p>Breach news is downstream of a leak, a researcher or a ransom post. An Item 1.05 filing is upstream of all of that: it is the company itself, under legal obligation, telling a regulator that something material happened. It arrives on a fixed clock and it names the company without ambiguity.</p>
+    <p>The number on each card is how many times they filed. One filing means a contained event with a clean story. Four filings means the assessed scope kept moving for months. That count is the closest thing to a severity read that exists in public data.</p>
+  </div>
+
+  <div class="count">
+    <div><b>42</b><span>filings read across 2026</span></div>
+    <div><b>19</b><span>companies disclosed an incident</span></div>
+    <div><b>10</b><span>with a reachable owner</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Alto Ingredients</p><p class="meta">Bloomington, IL &middot; disclosed 2026-08-07 and amended 2 times</p></div>
+      <div class="reps"><b>3</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Bryan Morris</span> — <span class="ti">Director of Information Technology</span>
+      <div class="links"><a href="mailto:bmorris@altoingredients.com">bmorris@altoingredients.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/bryanemorris" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>MOST RECENT DISCLOSURE ON THIS LIST - twenty days old. Filed three times, so the scope kept changing after the first report. Morris has run IT since 2019 and no separate security executive surfaced above him, which means the follow-on work lands on IT directly rather than on a security function with its own budget.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Bryan — Alto&#x27;s disclosure went in on 7 August, the most recent one on this list, and it was amended twice after. At a company your size the follow-on work lands on IT directly rather than on a separate security function.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Amgen</p><p class="meta">Tampa, FL &middot; disclosed 2026-07-31</p></div>
+      <div class="reps"><b>1</b><span>SEC filing</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">David Smith</span> — <span class="ti">Chief Information Security Officer</span>
+      <div class="links"><a href="mailto:davids@amgen.com">davids@amgen.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/davidesmithcissp" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>Largest company here by far and a single clean filing, which suggests a mature response process rather than a scramble. Smith has been CISO since 2019, so this is not his first incident and he will not need the category explained. Hardest sell on the list and the highest ceiling.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>David, you have been CISO at Amgen since 2019, so the July filing is not your first incident. The question after any of them is the same one, and it is not about the systems.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Upbound Group</p><p class="meta">Plano, TX &middot; disclosed 2026-07-22 and amended once</p></div>
+      <div class="reps"><b>2</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Anup Mehendale</span> — <span class="ti">Chief Risk Officer</span>
+      <div class="links"><a href="mailto:anup.mehendale@upbound.com">anup.mehendale@upbound.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/anup-mehendale-32072521" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>Rent-A-Center&#x27;s parent, consumer lease-to-own, so the exposed records are consumer financial data. The contact is Chief Risk Officer rather than a security title, which is unusual and useful: he owns the disclosure obligation and the incident at once, and those run on different clocks.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Anup — Upbound filed in July and amended it. As Chief Risk Officer you carry the disclosure obligation and the incident at the same time, and those two run on different clocks.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Navient</p><p class="meta">Wilkes-Barre, PA &middot; disclosed 2026-07-02 and amended once</p></div>
+      <div class="reps"><b>2</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Patrick Theurer</span> — <span class="ti">Chief Information Officer</span>
+      <div class="links"><a href="mailto:patrick.theurer@navient.com">patrick.theurer@navient.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/patrick-theurer-2845685" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>Student loan servicing. The exposure is not infrastructure, it is borrower records - names, balances, social security numbers - which have a long resale life. Theurer took the CIO seat in July 2024, so he inherited the estate and now owns an incident on it.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Patrick, Navient filed twice on the July incident. For a loan servicer the exposure is not the systems, it is the borrower records, and those do not stop circulating once the systems are clean.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">AdaptHealth</p><p class="meta">San Francisco, CA &middot; disclosed 2026-07-02</p></div>
+      <div class="reps"><b>1</b><span>SEC filing</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Nalin Narayanam</span> — <span class="ti">Chief Information Officer and CISO</span>
+      <div class="links"><a href="mailto:nnarayanam@adapthealth.com">nnarayanam@adapthealth.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/nalin-narayanam-a35686" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>Holds CIO and CISO in one title, so there is no internal handoff and no second opinion. Home medical equipment means protected health information, which carries both the longest exposure tail and the heaviest regulatory follow-through of anything on this list.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Nalin — you hold CIO and CISO at AdaptHealth at the same time, so the July filing landed on both halves of your job. Patient data has the longest tail of anything after an incident.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">8x8</p><p class="meta">San Francisco, CA &middot; disclosed 2026-06-23</p></div>
+      <div class="reps"><b>1</b><span>SEC filing</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Morgan Watts</span> — <span class="ti">Vice President IT &amp; Business Systems</span>
+      <div class="links"><a href="mailto:morgan.watts@8x8.com">morgan.watts@8x8.com</a><span class="dot">·</span><a href="https://www.linkedin.com/in/morgan-watts-470a67/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+<div class="corr"><b>Email corroborated:</b> Apollo and Clay independently returned the identical address. 8x8.com is catch-all so no server test can confirm the mailbox; two unrelated providers agreeing removes the pattern-guess risk.</div>
+    <div class="body"><p><span class="lbl">Why this account</span>A communications platform is the one category where a customer&#x27;s exposure and the vendor&#x27;s own are the same event. 2,847 employees, NASDAQ listed. Watts owns IT and business systems rather than security specifically, so the security conversation reaches him through operations.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Morgan, 8x8 disclosed in June. A communications platform is the one category where a customer&#x27;s exposure and your own are the same event, and your customers ask before your board does.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">iRhythm Technologies, Inc.</p><p class="meta">San Francisco, CA &middot; disclosed 2026-06-15</p></div>
+      <div class="reps"><b>1</b><span>SEC filing</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Orus Dearman</span> — <span class="ti">Chief Information Security Officer</span>
+      <div class="links"><a href="mailto:orus.dearman@irhythmtech.com">orus.dearman@irhythmtech.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/orusdearman" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>Cardiac monitoring devices and the data they produce. Dearman took the CISO seat in December 2024, so the June filing came eighteen months into his tenure - long enough to own the estate, recent enough that the response is still his to shape. Clean single filing.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Orus — iRhythm filed in June, eighteen months into your seat. Cardiac monitoring data does not lose value over time the way a stolen credential does.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">West Pharmaceutical Services</p><p class="meta">St. Louis, MO &middot; disclosed 2026-05-20 and amended 3 times</p></div>
+      <div class="reps"><b>4</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Wali Wahidi</span> — <span class="ti">Vice President Cybersecurity, Infrastructure &amp; Site Support</span>
+      <div class="links"><a href="mailto:wali.wahidi@westpharma.com">wali.wahidi@westpharma.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/wali-wahidi-a9751015" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>MOST AMENDED FILING ON THIS LIST - filed in May and amended three more times. Four filings means the assessed scope kept moving for months after containment. Wahidi owns cybersecurity, infrastructure and site support together, so he is carrying the remediation and the day job at once.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Wali — West filed in May and amended three more times after. Four filings means the scope kept moving long after containment, and the part that keeps moving is whatever already left.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Stryker</p><p class="meta">Fort Lauderdale, FL &middot; disclosed 2026-04-09 and amended 2 times</p></div>
+      <div class="reps"><b>3</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">JP Calderon Del Vecchio</span> — <span class="ti">Interim Global Chief Information Security Officer</span>
+      <div class="links"><a href="mailto:jp.calderon@stryker.com">jp.calderon@stryker.com</a><span class="dot">·</span><a href="https://www.linkedin.com/in/jpcalderon/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+<div class="corr"><b>Email corroborated:</b> Apollo and Clay independently returned the identical address. stryker.com is catch-all. NOTE: Apollo split his name wrong as &#x27;Calderon Vecchio&#x27;; Clay and his LinkedIn both give JP Calderon Del Vecchio.</div>
+    <div class="body"><p><span class="lbl">Why this account</span>SHARPEST TIMING ON THE LIST. Stryker filed its cyber disclosure on 9 April and Calderon Del Vecchio took the Interim Global CISO seat in May - the month after. A $22.6B, 52,000-person medical device company running its security function on an interim appointment made in the wake of a disclosed incident. Interim means decisions get made faster and budget is already unlocked.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>JP — Stryker filed its disclosure on 9 April and you took the interim global CISO seat in May. Whoever holds that seat inherits what is still exposed from before it, which is a different problem from the incident itself.</div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">UFP Technologies</p><p class="meta">Boston, MA &middot; disclosed 2026-02-24 and amended once</p></div>
+      <div class="reps"><b>2</b><span>SEC filings</span></div>
+    </div>
+    <div class="who">
+      <span class="nm">Keith Cote</span> — <span class="ti">Vice President of Information Technology</span>
+      <div class="links"><a href="mailto:kcote@ufpt.com">kcote@ufpt.com</a><span class="dot">·</span><a href="http://www.linkedin.com/in/keith-cote-pmp-220a5421" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+
+    <div class="body"><p><span class="lbl">Why this account</span>OLDEST DISCLOSURE HERE and marked as such - six months out, so the urgency has faded and the budget conversation has probably already happened. Included because Cote has run IT since 2018 and medical device contract manufacturing carries customer data obligations, but treat this as the coldest account on the list.</p></div>
+    <div class="opener"><span class="lbl">A first line, in your voice</span>Keith, UFP filed in February and amended it. Six months on is when an incident stops being a project, and the open question turns into whether anything is still out there.</div>
+  </div>
+
+  <footer>
+    <h2>The one to call first</h2>
+    <p><strong>JP Calderon Del Vecchio at Stryker.</strong> Stryker filed its cyber disclosure on 9 April. He took the Interim Global CISO seat in May &mdash; the month after. A $22.6 billion, 52,000-person medical device company is running its global security function on an interim appointment made in the wake of a disclosed incident. Interim means decisions move faster than they would under a permanent hire building a three-year plan, and the budget conversation has already happened.</p>
+    <h2 style="margin-top:26px">A note on the name</h2>
+    <p>Apollo returns him as &ldquo;Calderon Vecchio&rdquo; with the first name Calderon. That is a bad name split. His LinkedIn and a second provider both give <strong>JP Calderon Del Vecchio</strong>. Opening an email to a CISO with the wrong first name is the kind of thing that ends the conversation before the first sentence, so it is worth saying out loud rather than leaving in a field.</p>
+    <h2 style="margin-top:26px">Where the list is weakest</h2>
+    <p><strong>UFP Technologies is the coldest account and is marked on its card.</strong> February is six months ago. The urgency has faded and the budget conversation has likely already happened without you. It stays because the contact is solid and the sector fits, but if you only want heat, work the top of the list.</p>
+    <p><strong>Two emails needed a second source.</strong> 8x8 and Stryker both run catch-all domains, where the server accepts every address and a &ldquo;verified&rdquo; status proves nothing. Both were run through a second, unrelated provider and came back identical. The other eight verified cleanly.</p>
+    <h2 style="margin-top:26px">Method</h2>
+    <p>SEC EDGAR full-text search for Form 8-K filings containing Item 1.05, 1 January to 27 August 2026. That returned 42 filings from 19 distinct companies. Each company was then resolved to its security or IT owner, confirmed in seat with a start date. Nine of the nineteen are not here: either no reachable security owner exists in the record, or the company is too small to have one.</p>
+    <p class="sig">Built by Aharon Olshansky &middot; <a href="https://getgetacme.com">getgetacme.com</a> &middot; 27 August 2026</p>
+  </footer>
+</div>
+</body>
+</html>
