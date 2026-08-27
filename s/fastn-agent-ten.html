@@ -9,6 +9,7 @@ body{margin:0;background:#0E1116;color:#E8ECF2;font:16px/1.6 -apple-system,Blink
 header{border-bottom:1px solid #252B35;padding-bottom:30px;margin-bottom:38px}
 h1{font-size:38px;line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
 .sub{color:#8A93A0;font-size:17px;margin:0 0 20px}
+.note{background:#12161C;border:1px solid #252B35;border-radius:9px;padding:14px 16px;font-size:14px;color:#A9B2BE;margin-top:20px}
 .stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:22px}
 .stat b{display:block;font-size:27px;color:#fff}
 .stat span{font-size:12px;color:#69727E;text-transform:uppercase;letter-spacing:.09em}
@@ -29,6 +30,7 @@ a{color:#5B93FF;text-decoration:none}
 a:hover{text-decoration:underline}
 .warn{border-radius:7px;padding:12px 14px;font-size:13.5px;margin-bottom:15px;line-height:1.55}
 .flag{background:#2A1A12;border:1px solid #6b3a1e;color:#F5B32D}
+.soft{background:#181C24;border:1px solid #303845;color:#A9B2BE}
 .corr{background:#10241A;border:1px solid #1d4a31;color:#7FD9A2}
 code{font:12.5px ui-monospace,Menlo,monospace;background:#0a0d11;padding:1px 5px;border-radius:4px}
 .op p{margin:0;color:#E8ECF2;background:#0A0D11;border-left:3px solid #5B93FF;padding:13px 15px;border-radius:0 7px 7px 0;font-size:15px}
@@ -52,6 +54,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
 <div class="stat"><b>11</b><span>cut, with reasons</span></div>
 <div class="stat"><b>27 Aug 2026</b><span>audit date</span></div>
 </div>
+<div class="note"><b>On company size.</b> Seven of these ten sit between 200 and 1,000 people, where a platform lead can decide alone. Three are larger and two of those are public. I have marked those three on the card rather than quietly dropping them, because the buying signal at each is genuine even where the sales cycle is not short. The judgement on whether to work them is yours, not mine.</div>
 </header>
 <article class="c">
 <div class="h"><span class="n">01</span><h2>Drata</h2><span class="b ok">email corroborated</span></div>
@@ -96,7 +99,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
   <div><span class="lbl">Contact</span><p class="nm">James Stevenson</p><p class="ti">Head of Engineering - AI Platforms</p></div>
   <div><span class="lbl">Reach</span><p><a href="mailto:james.stevenson@socure.com">james.stevenson@socure.com</a></p><p><a href="http://www.linkedin.com/in/stevensonjamese">LinkedIn</a> &middot; Seattle, WA &middot; in seat since 2026-05</p></div>
 </div>
-<div class="warn flag"><b>Two providers disagree on this address.</b> Apollo returns <code>james.stevenson@socure.com</code>, Clay returns <code>james@socure.com</code>. socure.com is a catch-all domain, so both will pass a verifier and either may bounce. Try the Apollo form first; if it bounces, the Clay form is the fallback. This is the one address on the list I could not settle.</div>
+<div class="warn flag"><b>Two providers disagree on this address.</b> Apollo returns <code>james.stevenson@socure.com</code>, Clay returns <code>james@socure.com</code>. socure.com is a catch-all domain, so both pass a verifier and either may bounce. Try the Apollo form first; the Clay form is the fallback. This is the one address on the list I could not settle.</div>
 <div class="op"><span class="lbl">Opener, written from the postings above</span><p>James, three months into the AI Platforms seat and Socure has a Forward Deployed Engineer for RiskOS Agents and a Software Engineer for Agentic AI Foundations open, posted a day apart. Identity decisioning already calls out to a lot of external providers. Putting agents on top of that usually means somebody rebuilds the plumbing. Is that on your side of the line?</p></div>
 </article><article class="c">
 <div class="h"><span class="n">06</span><h2>Sardine</h2><span class="b ok">email corroborated</span></div>
@@ -114,7 +117,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
   <div><span class="lbl">Contact</span><p class="nm">Mitch Trale</p><p class="ti">Head of Platform Engineering &amp; Agentic Systems</p></div>
   <div><span class="lbl">Reach</span><p><a href="mailto:mitch.trale@omadahealth.com">mitch.trale@omadahealth.com</a></p><p><a href="http://www.linkedin.com/in/mitchtrale">LinkedIn</a> &middot; Oakland, CA &middot; in seat since 2023-10</p></div>
 </div>
-<div class="warn corr">Catch-all domain, so "verified" alone means nothing. Apollo and Clay were queried independently and returned the identical address.</div>
+<div class="warn corr">Catch-all domain, so "verified" alone means nothing. Apollo and Clay were queried independently and returned the identical address.</div><div class="warn soft"><b>fit: minor.</b> SIZE, MILDER. 986 people and public (Nasdaq, listed 2025). Manageable, but expect a security review. The contact&#x27;s own title - Platform Engineering and Agentic Systems - is the closest title-to-product match on the entire list.</div>
 <div class="op"><span class="lbl">Opener, written from the postings above</span><p>Mitch, your title says Platform Engineering and Agentic Systems, and Omada posted a Senior Engineer for Core Systems and Integrations alongside four AI roles in the same week at the end of July. That reads like one team being asked to make agents talk to systems that were never built for them. Curious whether you are standardising that layer or wiring it per system.</p></div>
 </article><article class="c">
 <div class="h"><span class="n">08</span><h2>Arcadia</h2><span class="b ok">non-catch-all</span></div>
@@ -132,7 +135,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
   <div><span class="lbl">Contact</span><p class="nm">Ankur Bhatt</p><p class="ti">VP Engineering, Agent OS and Applied AI</p></div>
   <div><span class="lbl">Reach</span><p><a href="mailto:ankur.bhatt@servicetitan.com">ankur.bhatt@servicetitan.com</a></p><p><a href="http://www.linkedin.com/in/ankurbhatt77">LinkedIn</a> &middot; San Francisco, CA &middot; in seat since 2026-04</p></div>
 </div>
-<div class="warn corr">Catch-all domain, so "verified" alone means nothing. Apollo and Clay were queried independently and returned the identical address.</div>
+<div class="warn corr">Catch-all domain, so "verified" alone means nothing. Apollo and Clay were queried independently and returned the identical address.</div><div class="warn flag"><b>fit: read this first.</b> SIZE AND INTENT. 3,379 people, public (NASDAQ:TTAN). For a 25-person vendor that means security review, SOC 2 and procurement, so a 9 to 12 month cycle. And read the contact&#x27;s title again: VP Engineering, Agent OS and Applied AI. A company that has named an internal Agent OS org and put a VP on it may already have decided to build rather than buy. Strongest signal on the list, hardest sale on the list.</div>
 <div class="op"><span class="lbl">Opener, written from the postings above</span><p>Ankur, your title is Agent OS and Applied AI, and ServiceTitan has a Senior Integration Engineer and a Sr Lead Engineer for Integration and Automation open a week apart. An agent OS for the trades has to reach accounting, payments, dispatch and CRM before it does anything useful. Curious whether the integration hires are building that reach or maintaining what is already there.</p></div>
 </article><article class="c">
 <div class="h"><span class="n">10</span><h2>Ping Identity</h2><span class="b ok">non-catch-all</span></div>
@@ -141,7 +144,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
   <div><span class="lbl">Contact</span><p class="nm">Arnaud Lacour</p><p class="ti">Head of AI &amp; Disruptive Programs</p></div>
   <div><span class="lbl">Reach</span><p><a href="mailto:arnaudlacour@pingidentity.com">arnaudlacour@pingidentity.com</a></p><p><a href="http://www.linkedin.com/in/arnaudlacour">LinkedIn</a> &middot; Denver, CO &middot; in seat since 2025-04</p></div>
 </div>
-
+<div class="warn flag"><b>fit: read this first.</b> SIZE. Large and Thoma Bravo owned. Same procurement problem as ServiceTitan. The Identity and AI Agent Governance role is real and recent, but a seed-stage vendor selling infrastructure here is a long cycle.</div>
 <div class="op"><span class="lbl">Opener, written from the postings above</span><p>Arnaud, Ping has a Staff Software Engineer open for Identity and AI Agent Governance in Dallas. Governing what an agent is allowed to reach is the same problem as getting it to reach anything at all, just approached from the other end. Curious whether that role is about Ping&#x27;s own agents or about governing your customers&#x27;.</p></div>
 </article>
 <div class="cut">
@@ -150,7 +153,7 @@ footer{margin-top:46px;padding-top:24px;border-top:1px solid #252B35;color:#6972
 <div class="tw"><table><tr><td>project44</td><td>Every integration role offshore - Integration Engineer in Krakow, IT Automation Engineer in Krakow and Bangalore. Zero US. Also all 68 postings are duplicates: same job on project44.com and Greenhouse. Real count 34.</td></tr><tr><td>dbt Labs</td><td>BROKEN RECORD. Apollo&#x27;s org record says dbt Labs / getdbt.com. All 206 postings returned point to fivetran.com/careers. An outreach built on this would state a fact about a different company.</td></tr><tr><td>Forter</td><td>All AI engineering in Israel and London, implementation engineers Singapore and Sydney. Zero US. Plus a Strategic Partnerships Manager for AI and Agentic Commerce posted 28 April, still observed four months later.</td></tr><tr><td>Alation</td><td>The only agentic role, DCX Agentic AI Engineer, is in Chennai. Most engineering is Chennai. US postings are customer-facing Deployment Strategists and sales.</td></tr><tr><td>DevRev</td><td>Forward Deployed Engineers in Chennai, Cebu and Bengaluru. Applied AI Strategist in Bengaluru. US postings are a data engineer, an alliance architect and an SDR.</td></tr><tr><td>BlackLine</td><td>Senior Software Engineer Python/Agentic AI is in Bengaluru, Senior AI ML Engineer in Krakow. US roles are implementation, professional services and marketing.</td></tr><tr><td>Medable</td><td>Only agentic role - Forward Deployed Engineer, Agentic AI for Clinical Development - posted 11 April and LAST SEEN 22 July, dead a month before the audit. Its URL also resolves to Technical-Engagement-Consultant: the title and the requisition underneath it are different jobs.</td></tr><tr><td>MasterControl</td><td>One Applied AI Solutions Engineer, 14 July, and nothing else. Eleven postings company-wide, zero integration roles.</td></tr><tr><td>Dragos</td><td>Has Staff Data Engineer - Integrations, 18 Aug, but zero agent or AI roles, and it is data-pipeline work rather than application integration. Wrong half of the signal.</td></tr><tr><td>Conviva</td><td>One recent role (15 July), but two other roles on the same Agent Analytics team were posted 29 January and 11 March and are STILL being observed. Evergreen postings, not hires.</td></tr><tr><td>Provenir</td><td>One agentic role, US-based, but the rest of engineering is India and a single posting is not evidence of a build.</td></tr></table></div>
 </div>
 <footer>
-Built by hand on 27 August 2026 from Apollo job-posting records and SEC-grade reading of each one, cross-checked against each company's own careers page. Every email on non-catch-all domains is verified; every email on a catch-all domain was queried independently through two providers and is marked above. One address could not be settled and says so.<br><br>
+Built by hand on 27 August 2026 from Apollo job-posting records, each one opened and read, and cross-checked against the company's own careers page. Emails on non-catch-all domains are verified; emails on catch-all domains were queried independently through two providers and are marked above. One address could not be settled and says so on its card.<br><br>
 <a href="https://getgetacme.com">getgetacme.com</a>
 </footer>
 </div>
