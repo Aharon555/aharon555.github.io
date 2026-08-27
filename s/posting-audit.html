@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nine Companies That Passed a Hiring Filter">
+<meta property="og:description" content="What the raw job postings showed after nine companies cleared a hiring-salespeople filter. Six had something wrong with them.">
+<meta property="og:site_name" content="GetGetAcme">
+<meta name="twitter:card" content="summary">
+<title>Nine Companies That Passed a Hiring Filter</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --bg:#0f1115; --panel:#161920; --panel-2:#1c2029; --line:#272c37;
+    --ink:#e8eaef; --ink-2:#a2a9b8; --ink-3:#6d7585; --amber:#e8b44a;
+    --flag:#e0863f;
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:56px 22px 88px}
+
+  .eyebrow{
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink-3); margin:0 0 18px
+  }
+  h1{
+    font-size:clamp(30px,5.4vw,44px); line-height:1.15; letter-spacing:-.02em;
+    margin:0 0 18px; font-weight:600
+  }
+  .lede{font-size:clamp(17px,2.4vw,19px); color:var(--ink-2); margin:0; max-width:62ch}
+  .lede strong{color:var(--ink); font-weight:600}
+
+  .signal{
+    margin:38px 0 8px; padding:22px 24px; background:var(--panel);
+    border:1px solid var(--line); border-left:3px solid var(--amber); border-radius:8px;
+  }
+  .signal h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber); margin:0 0 10px; font-weight:600}
+  .signal p{margin:0 0 10px; color:var(--ink-2); font-size:15px}
+  .signal p:last-child{margin-bottom:0}
+
+  .count{
+    display:flex; gap:28px; flex-wrap:wrap; margin:34px 0 6px;
+    padding:20px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line)
+  }
+  .count div{flex:1 1 140px}
+  .count b{display:block; font-size:28px; color:var(--amber); font-weight:600; line-height:1.2; font-variant-numeric:tabular-nums}
+  .count span{font-size:13px; color:var(--ink-3)}
+
+  .card{
+    margin-top:16px; background:var(--panel); border:1px solid var(--line);
+    border-radius:10px; overflow:hidden
+  }
+  .card-top{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    padding:20px 24px 0
+  }
+  .co{font-size:21px; font-weight:600; letter-spacing:-.01em; margin:0}
+  .meta{font-size:13px; color:var(--ink-3); margin:0}
+  .reps{
+    margin-left:auto; text-align:right; white-space:nowrap;
+    font-variant-numeric:tabular-nums
+  }
+  .reps b{font-size:30px; color:var(--amber); font-weight:600; line-height:1}
+  .reps span{display:block; font-size:11px; color:var(--ink-3); letter-spacing:.07em; text-transform:uppercase; margin-top:2px}
+
+  .who{
+    margin:16px 24px 0; padding:14px 16px; background:var(--panel-2);
+    border-radius:7px; font-size:15px
+  }
+  .who .nm{font-weight:600}
+  .who .ti{color:var(--ink-2)}
+  .who .links{margin-top:7px; font-size:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  .who a{color:var(--amber); text-decoration:none; border-bottom:1px solid rgba(232,180,74,.32)}
+  .who a:hover{border-bottom-color:var(--amber)}
+  .dot{color:var(--ink-3)}
+
+  .body{padding:16px 24px 22px}
+  .body p{margin:0 0 12px; font-size:15px; color:var(--ink-2)}
+  .body p:last-child{margin-bottom:0}
+  .body .lbl{
+    display:block; font-size:11px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-3); margin-bottom:3px
+  }
+  .opener{
+    margin:16px 24px 22px; padding:15px 18px; background:#12151c;
+    border:1px dashed var(--line); border-radius:7px;
+    font-size:15px; color:var(--ink); line-height:1.65
+  }
+  .opener .lbl{
+    display:block; font-size:11px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-3); margin-bottom:7px
+  }
+  .flag{
+    margin:14px 24px 0; padding:11px 14px; border-radius:7px;
+    background:rgba(224,134,63,.09); border:1px solid rgba(224,134,63,.28);
+    font-size:13.5px; color:#f0b98a
+  }
+  .flag b{color:var(--flag)}
+
+  .corr{
+    margin:14px 24px 0; padding:11px 14px; border-radius:7px;
+    background:rgba(110,190,140,.09); border:1px solid rgba(110,190,140,.28);
+    font-size:13.5px; color:#9fd4b4
+  }
+  .corr b{color:#6fc294}
+  footer{margin-top:52px; padding-top:26px; border-top:1px solid var(--line)}
+  footer h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 14px; font-weight:600}
+  footer p{font-size:14.5px; color:var(--ink-2); margin:0 0 12px; max-width:70ch}
+  footer p:last-child{margin-bottom:0}
+  footer strong{color:var(--ink)}
+  .sig{margin-top:26px; font-size:14px; color:var(--ink-3)}
+  .sig a{color:var(--amber); text-decoration:none}
+
+  @media (max-width:560px){
+    .wrap{padding:38px 16px 64px}
+    .card-top{padding:18px 18px 0}
+    .who,.opener,.flag{margin-left:18px; margin-right:18px}
+    .body{padding:14px 18px 20px}
+    .reps{margin-left:0; text-align:left}
+    .reps b{font-size:26px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Prepared for Alex Montgomery &middot; 27 August 2026</p>
+  <h1>Nine companies passed a hiring-salespeople filter. I read every posting behind them.</h1>
+  <p class="lede">I said I would send you this. Here it is, re-run this morning so the dates are today&#x27;s. Nine companies that all cleared the same filter &mdash; <strong>currently hiring Account Executive or SDR, posted since 1 July</strong>. Then I pulled all 266 raw postings and read them. <strong>Three were clean. Six had something wrong.</strong></p>
+
+  <div class="signal">
+    <h2>Why this matters more than the hit rate</h2>
+    <p>The interesting part is not that the filter is sometimes wrong. It is that it is wrong in six different ways, and every one of them looks fine from the outside. A company that runs a job board. A company whose only US sales seat is an SDR. A posting last seen eight weeks ago. The same job counted three times. Postings with no country at all. And a company that is genuinely hiring, where the location field contradicts the job title on the same record.</p>
+    <p>None of that is visible until somebody opens the postings. The filter returns all nine identically.</p>
+  </div>
+
+  <div class="count">
+    <div><b>266</b><span>raw postings read</span></div>
+    <div><b>6 of 9</b><span>had a defect behind them</span></div>
+    <div><b>6</b><span>distinct ways the filter was wrong</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">ADWEEK</p><p class="meta">40 postings read &middot; US sales roles: 0 of its own</p></div>
+      <div class="reps"><b>40</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>FAILS COMPLETELY</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>Every one of the 40 postings sits on jobs.adweek.com - ADWEEK runs a job board. The eight &#x27;Advertising Account Executive&#x27; roles belong to Cox Media, NYT Wirecutter, Lonely Planet and others who paid to list there. ADWEEK is a media company selling ad space for job listings. It is hiring none of them.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Arcana</p><p class="meta">32 postings read &middot; US sales roles: 1, and it is an SDR</p></div>
+      <div class="reps"><b>32</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>FAILS FOR AE</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>The only US sales posting is a Sales Development Representative in New York. Every AE-level role is elsewhere: Strategic Account Executive in London, Sales Director in London, Sales Director in Hong Kong. Engineering is entirely in Bengaluru and Coimbatore. A US AE search returns this company and there is no US AE.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Scaled Agile</p><p class="meta">2 postings read &middot; US sales roles: 1, last seen 55 days ago</p></div>
+      <div class="reps"><b>2</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>STALE</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>Two postings total. The US Account Executive in Boulder was last observed 3 July - fifty-five days before this audit. The other is in Wales. The filter still reports the company as hiring an AE today.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">M3 USA</p><p class="meta">16 postings read &middot; US sales roles: 7, but 3 are the same job</p></div>
+      <div class="reps"><b>16</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>INFLATED COUNT</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>Three separate postings for Head of Sales - two titled REMOTE, one not - are the same role listed three times. Counting postings makes the sales team look like it is tripling. Every posting was last observed 22 days ago.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Hypersonix</p><p class="meta">9 postings read &middot; US sales roles: 1 confirmed, 3 unknown</p></div>
+      <div class="reps"><b>9</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>NO LOCATION DATA</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>Sales Director in San Jose is real. But the Business Development Representative and the Sales Account Executive postings carry no city, no state and no country at all. A hiring-in-the-US filter has to guess on those, and it does.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">LangChain</p><p class="meta">123 postings read &middot; US sales roles: dozens, genuinely</p></div>
+      <div class="reps"><b>123</b><span>postings</span></div>
+    </div>
+<div class="flag"><b>PASSES BUT LOCATIONS ARE WRONG</b></div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>The company is genuinely hiring across the US. The location fields are not: Enterprise AE (Nashville) is tagged Monticello Arkansas, Enterprise AE (Colorado) is tagged Denver Missouri, Deployed Engineer (Phoenix) is tagged Bemidji Minnesota, and Account Executive (Australia) is tagged New Zealand. The job title contradicts the location field on the same record.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">LlamaIndex</p><p class="meta">31 postings read &middot; US sales roles: 3</p></div>
+      <div class="reps"><b>31</b><span>postings</span></div>
+    </div>
+<div class="corr"><b>Filter was right:</b> the raw record matches what the filter claimed.</div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>Enterprise Account Executive, Business Development Representative and Mid-Market Account Executive, all San Francisco, all observed yesterday. One Enterprise AE in London. The filter is correct here.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Ollama</p><p class="meta">8 postings read &middot; US sales roles: 1</p></div>
+      <div class="reps"><b>8</b><span>postings</span></div>
+    </div>
+<div class="corr"><b>Filter was right:</b> the raw record matches what the filter claimed.</div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>One Account Executive, one GTM Engineer, both in the US, both observed yesterday. Small company, small posting list, filter is correct.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="co">Morning Brew</p><p class="meta">5 postings read &middot; US sales roles: 1</p></div>
+      <div class="reps"><b>5</b><span>postings</span></div>
+    </div>
+<div class="corr"><b>Filter was right:</b> the raw record matches what the filter claimed.</div>
+    <div class="body"><p><span class="lbl">What the raw record showed</span>One Associate Account Executive in New York, observed yesterday. Four editorial and audience roles. The filter is correct.</p></div>
+  </div>
+
+  <footer>
+    <h2>The one worth reading twice</h2>
+    <p><strong>ADWEEK.</strong> Forty open postings, eight of them titled Advertising Account Executive. It looks like the best account on the list. Every single posting sits on jobs.adweek.com, because ADWEEK operates a job board &mdash; the roles belong to Cox Media, NYT Wirecutter, Lonely Planet and whoever else paid to list. ADWEEK is not hiring a single one of them. A data provider scraped a marketplace and attributed the inventory to the landlord.</p>
+    <h2 style="margin-top:26px">What I would not claim</h2>
+    <p>Nine is a small sample and I picked the companies from one filter on one day, so the six-of-nine ratio is not a statistic. What it is, is nine specific companies you can go and check yourself. The postings are all public. Open ADWEEK&#x27;s careers page and count how many of those jobs are theirs.</p>
+    <p>Three of the nine were completely clean &mdash; LlamaIndex, Ollama and Morning Brew. The filter told the truth about those. That is the part a vendor selling you a filter would also mention, and the part somebody selling you skepticism would leave out.</p>
+    <h2 style="margin-top:26px">Method</h2>
+    <p>Companies of 51&ndash;500 employees in the United States with an active posting for Account Executive, Enterprise Account Executive or Sales Development Representative dated on or after 1 July 2026. Staffing firms and consultancies removed by industry code. Then every raw posting for each company pulled and read: title, city, state, country, date posted, date last observed, and the URL it actually lives on.</p>
+    <p class="sig">Built by Aharon Olshansky &middot; <a href="https://getgetacme.com">getgetacme.com</a> &middot; 27 August 2026</p>
+  </footer>
+</div>
+</body>
+</html>
